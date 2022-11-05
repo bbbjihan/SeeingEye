@@ -1,0 +1,3 @@
+[submodule "SeeingEye_yolov5"]
+	path = SeeingEye_yolov5
+	url = https://github.com/bbbjihan/SeeingEye_yolov5

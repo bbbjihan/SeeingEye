@@ -1,0 +1,47 @@
+{
+    "1" : {
+        "name" : "신라면",
+        "type" : "컵라면",
+        "nutrient" : "",
+        "ingredient" : "",
+        "allergy" : "",
+        "howToCook" : "",
+        "taste" : ""
+    },
+    "2" : {
+        "name" : "불닭볶음면",
+        "type" : "컵라면",
+        "nutrient" : "",
+        "ingredient" : "",
+        "allergy" : "",
+        "howToCook" : "",
+        "taste" : ""
+    },
+    "3" : {
+        "name" : "비빔면",
+        "type" : "컵라면",
+        "nutrient" : "",
+        "ingredient" : "",
+        "allergy" : "",
+        "howToCook" : "",
+        "taste" : ""
+    },
+    "4" : {
+        "name" : "진라면",
+        "type" : "컵라면",
+        "nutrient" : "",
+        "ingredient" : "",
+        "allergy" : "",
+        "howToCook" : "",
+        "taste" : ""
+    },
+    "5" : {
+        "name" : "육개장",
+        "type" : "컵라면",
+        "nutrient" : "",
+        "ingredient" : "",
+        "allergy" : "",
+        "howToCook" : "",
+        "taste" : ""
+    }
+}
