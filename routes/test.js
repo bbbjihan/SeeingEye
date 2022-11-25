@@ -5,7 +5,7 @@ exports.test = async (req,res) => {
         mode: 'text',
         pythonPath: '',
         pythonOptions: [],
-        scriptPath: 'SeeingEye project',
+        scriptPath: 'pythons',
         args: []
     };
 
