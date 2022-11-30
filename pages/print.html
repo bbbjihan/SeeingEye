@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset = utf-8">
+  <title>TEST</title>
+ </head>
+ <body>
+    <h1>　DETECTING RESULT</h1>
+    <table border = "1">
+        <tr>
+            <td>INDEX　　　　　　</td>
+            <td id="index"></td>
+        </tr>
+        <tr>
+            <td>NAME</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>TYPE</td>
+            <td id="type"></td>
+        </tr>
+        <tr>
+            <td>NUTRIENT</td>
+            <td id="nutrient"></td>
+        </tr>
+        <tr>
+            <td>INGREDIENT</td>
+            <td id="ingredient"></td>
+        </tr>
+        <tr>
+            <td>ALLERGY</td>
+            <td id="allergy"></td>
+        </tr>
+        <tr>
+            <td>HOWTOCOOK</td>
+            <td id="howToCook"></td>
+        </tr>
+        <tr>
+            <td>TASTE</td>
+            <td id="taste"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" id="callTTS" value="TTS 변환 / 저장"/>
+    <br><br>
+    이름 <audio src="/name.mp3" controls></audio>
+    <br>
+    상품종류 <audio src="/type.mp3" controls></audio>
+    <br>
+    재료 <audio src="/nutrient.mp3" controls></audio>
+    <br>
+    영양성분 <audio src="/ingredient.mp3" controls></audio>
+    <br>
+    알러지 <audio src="/allergy.mp3" controls></audio>
+    <br>
+    요리방법 <audio src="/howToCook.mp3" controls></audio>
+    <br>
+    맛 <audio src="/taste.mp3" controls></audio>
+    <script type="module">
+        import json from './productInform.js';
+        const index = window.location.search.slice(1,)
+        const data = json.products[index]
+        console.log(index)
+        console.log(data)
+        document.getElementById('index').innerHTML = '0' + data.index + '　　　　　　　　　　　　　　';
+        document.getElementById('name').innerHTML = data.name;
+        document.getElementById('type').innerHTML = data.type;
+        document.getElementById('nutrient').innerHTML = data.nutrient;
+        document.getElementById('ingredient').innerHTML = data.ingredient;
+        document.getElementById('allergy').innerHTML = data.allergy;
+        document.getElementById('howToCook').innerHTML = data.howToCook;
+        document.getElementById('taste').innerHTML = data.taste;
+        
+        document.querySelector('#callTTS').addEventListener('click',function(){
+            location.replace("http://localhost:8080/inform?" + index + "&" + data.name);
+        })
+    </script>
+ </body>
+</html>
